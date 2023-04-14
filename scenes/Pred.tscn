@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://bwci7db6ouod8"]
+
+[ext_resource type="Script" path="res://scripts/Pred.cs" id="2"]
+[ext_resource type="Texture2D" uid="uid://mxfcyt0amkg6" path="res://images/redcircle100.png" id="2_u7exx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eh2fi"]
+radius = 50.0
+
+[sub_resource type="CircleShape2D" id="1"]
+radius = 1955.76
+
+[node name="Pred" type="CharacterBody2D" groups=["pred"]]
+scale = Vector2(0.06, 0.06)
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_u7exx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_eh2fi")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("1")

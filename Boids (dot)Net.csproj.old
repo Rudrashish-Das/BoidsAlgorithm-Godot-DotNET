@@ -1,0 +1,12 @@
+<Project Sdk="Godot.NET.Sdk/4.7.2">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <RootNamespace>BoidsdotNet</RootNamespace>
+    <Configuration Condition=" '$(Configuration)' == '' ">Tools</Configuration>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <!-- <ItemGroup>
+    <Compile Include="**\*.cs" />
+  </ItemGroup> -->
+</Project>
